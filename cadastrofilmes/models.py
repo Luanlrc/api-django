@@ -1,11 +1,11 @@
 from django.db import models
 
 class Autor(models.Model):
-    nome=models.TextField(max_length=250)
+    name=models.TextField(max_length=250)
     idade=models.IntegerField()
     
     def __str__ (self):
-        return self.nome
+        return self.name
         
 class Genero(models.IntegerChoices):
     terror = 0

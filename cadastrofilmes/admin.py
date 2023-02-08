@@ -6,7 +6,7 @@ class FilmeAdmin (admin.ModelAdmin):
     list_display_links = ("autor",)
 
 class AutorAdmin (admin.ModelAdmin):
-    list_display = ("nome", "idade")
+    list_display = ("name", "idade")
 
 admin.site.register(models.Autor, AutorAdmin)
 admin.site.register(models.Filme, FilmeAdmin)
