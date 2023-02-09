@@ -11,3 +11,7 @@ class AutorSerializer (serializers.ModelSerializer):
         model=models.Autor
         fields="__all__"
 
+class LivroSerializer( serializers.ModelSerializer):
+    class Meta:
+        model=models.Livro
+        fields="__all__"

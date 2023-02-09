@@ -6,6 +6,7 @@ app_name="cadastrofilmes.urls"
 routers = routers.SimpleRouter()
 routers.register(r"Filmes",views.FilmeViewset)
 routers.register(r"Autor",views.AutorViewset)
+routers.register(r"Livro",views.LivroViewset)
 
 
 urlpatterns=[path("Api/",include(routers.urls)) ]
